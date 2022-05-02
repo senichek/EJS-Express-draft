@@ -8,12 +8,12 @@
     <title> <%= city.name %> </title>
 </head>
 <body>
-    <%- include('header', {cityVar: city.name}); %>
+    <%- include('header', {cityVar: city.name}); %> <!-- cityVar will be available on header page -->
     <h1> <%= city.name %> </h1>
     <p>City name: <%= city.name %></p>
     <p>Date: <%= dateTime.getDate(city.tz) %></p>
     <p>Time: <%= dateTime.getTime(city.tz) %></p>
     <a href= <%= goBack %>   >Go back</a>
-    <%- include('footer', {cityVar: city.name}); %>
+    <%- include('footer', {cityVar: city.name}); %>  <!-- cityVar will be available on footer page -->
 </body>
 </html>
